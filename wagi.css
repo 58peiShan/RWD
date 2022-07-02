@@ -1,0 +1,256 @@
+header {
+    height: 81px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./pic/title_bg@2x.png);
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 56px;
+    background: #E5E5E5;
+    justify-content: center;
+
+}
+
+footer div {
+    width: 50%;
+
+}
+
+footer img {
+    margin: auto;
+    text-align: center;
+    width: 25px;
+}
+
+.back {
+    display: none;
+}
+
+.frame {
+    width: 600px;
+    box-sizing: border-box;
+    /* position: absolute;
+    width: 600px;
+    height: 101px;
+    left: calc(50% - 600px/2);
+    top: 306px; */
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+}
+
+.category {
+    width: 50%;
+}
+
+.searchBar {
+    position: relative;
+
+}
+
+.searchBar input {
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+}
+
+.searchBar img {
+    z-index: 5;
+    position: absolute;
+    right: 5px;
+}
+
+.searchBar img:hover {
+    cursor: pointer;
+}
+
+.userInfo img {
+    width: 65px;
+}
+
+.clickBar {
+    height: 21px;
+    position: relative;
+    width: 600px;
+}
+
+.clickBar img {
+    position: absolute;
+    width: 22px;
+    right: 0;
+}
+
+.groupInfo div:first-child {
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.groupInfo div:last-child {
+    color: #FF6400;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.discount div:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+}
+
+.discount img {
+    width: 35px;
+}
+
+.barBack {
+    position: relative;
+    height: 18px;
+    background: #E4E4E4;
+    border-radius: 10px;
+}
+
+.bar {
+    position: absolute;
+    /* z-index: 1; */
+    height: 18px;
+    left: 0%;
+    right: 57.35%;
+    top: calc(50% - 18px/2);
+    background: #FFDA14;
+    border-radius: 9px;
+}
+
+.barBack::after {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    position: absolute;
+    content: "目標單數：5/已拼單：2";
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+@media (max-width: 745px) {
+    .back {
+        display: flex;
+        width: 24px;
+
+    }
+
+    .category {
+        width: 100%;
+    }
+
+    .frame {
+        width: 500px;
+        box-sizing: border-box;
+        /* position: absolute;
+        width: 600px;
+        height: 101px;
+        left: calc(50% - 600px/2);
+        top: 306px; */
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        border-radius: 4px;
+    }
+
+    .clickBar {
+        height: 21px;
+        position: relative;
+        width: 500px;
+    }
+
+    @media (max-width: 415px) {
+        header {
+            width: 100vw;
+            height: 81px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(./pic/title_bg.png);
+        }
+
+        .container {
+            padding: 0;
+        }
+
+
+        .back {
+            display: flex;
+            width: 24px;
+            align-self: flex-start;
+        }
+
+        .frame {
+            padding: 9px;
+            width: 90vw;
+            box-sizing: border-box;
+            /* position: absolute;
+        width: 600px;
+        height: 101px;
+        left: calc(50% - 600px/2);
+        top: 306px; */
+            background: #FFFFFF;
+            border: 1px solid #C4C4C4;
+            border-radius: 4px;
+        }
+
+        .frame div:first-child {}
+
+        .clickBar {
+            height: 21px;
+            position: relative;
+            width: 80vw;
+        }
+
+        .btn img {
+            width: 32px;
+        }
+
+        .userInfo {
+            margin-right: 6px;
+        }
+
+        body {
+            position: relative;
+            height: calc(100vh - 81px);
+        }
+
+        footer {
+            position: fixed;
+            justify-content: space-between;
+            bottom: 0;
+            right: 0;
+            width: 100vw;
+            height: 100px;
+            background: #E5E5E5;
+        }
+
+        footer div {
+            width: 100%;
+
+        }
+
+
+    }
+
+}
